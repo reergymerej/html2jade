@@ -6,6 +6,7 @@
         "beforeEach",
         "afterEach",
         "before",
-        "after"
+        "after",
+        "xdescribe"
     ]
 }

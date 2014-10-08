@@ -10,3 +10,24 @@ describe('sanity', function () {
         will(app).exist();
     });
 });
+
+xdescribe('finding html documents', function () {
+});
+
+describe('converting html', function () {
+    it('should return the jade equivalent', function (done) {
+        var html =
+            '<html>' +
+            '    <body>' +
+            '        <div id="content"></div>' +
+            '    </body>' +
+            '</html>';
+
+        var jade = 
+            'html' +
+            '    body' +
+            '        div#content';
+
+        will(app.convert(html)).be(jade);
+    });
+});
